@@ -17,17 +17,17 @@
 
 				if (progress >= 100) {
 					clearInterval(updateProgressIntervalID);
-					location.href = "https://github.com/ParkSnoopy/sgb_unlimiter/releases/latest";
+					redirect_pri_sgbunlimiter_latest();
 				}
 			}
 			const updateProgressIntervalID = setInterval(updateProgress, 400);
 		</script>
 
 		<script type="text/javascript"> // URLBuilder
-			function redirect_pri_unl_latest() { location.href = "https://github.com/ParkSnoopy/sgb_unlimiter/releases/latest"; }
-			function redirect_pri_unl() { location.href = "https://github.com/ParkSnoopy/sgb_unlimiter/releases"; }
-			function redirect_pri_ini() { location.href = "https://github.com/ParkSnoopy/sgb_initializer/releases"; }
-			function redirect_sub_ini() { location.href = "https://github.com/mil-acc-github/sgb_initializer/releases"; }
+			function redirect_pri_sgbunlimiter_latest() { location.href = "https://github.com/ParkSnoopy/sgb_unlimiter/releases/latest"; }
+			function redirect_pri_sgbunlimiter() { location.href = "https://github.com/ParkSnoopy/sgb_unlimiter/releases"; }
+			function redirect_pri_outboundporttester() { location.href = "https://github.com/ParkSnoopy/outbound-port-tester/releases"; }
+			function redirect_sub_sgbinitializer() { location.href = "https://github.com/mil-acc-github/sgb_initializer/releases"; }
 		</script>
 
 		<title>snoopage - SGB Tools</title>
@@ -42,7 +42,7 @@
 					<br>
 					<h3 class="h3">You will be redirected shortly...</h3>
 					<p class="text-secondary">to 'SGB Unlimiter' download page</p>
-					<p><a class="btn btn-success btn-lg" role="button" onclick="redirect_pri_unl_latest()">Redirect Now »</a></p>
+					<p><a class="btn btn-success btn-lg" role="button" onclick="redirect_pri_sgbunlimiter_latest()">Redirect Now »</a></p>
 					<br>
 				</div>
 			</div>
@@ -53,19 +53,19 @@
 					<div class="col-md-4">
 						<h2>SGB Unlimiter</h2>
 						<h5><span class="h6 text-secondary">by - </span><span class="text-success">ParkSnoopy</span></h5>
-						<p><a class="btn btn-secondary" role="button" onclick="redirect_pri_unl()">All Releases »</a></p>
+						<p><a class="btn btn-secondary" role="button" onclick="redirect_pri_sgbunlimiter()">All Releases »</a></p>
 						<p>Disabling CKIR PC's Restriction Programs.</p>
 					</div>
 					<div class="col-md-4">
-						<h2>SGB Initializer</h2>
+						<h2>Outbound Port Tester</h2>
 						<h5><span class="h6 text-secondary">by - </span><span class="text-success">ParkSnoopy</span></h5>
-						<p><a class="btn btn-secondary" role="button" onclick="redirect_pri_ini()">All Releases »</a></p>
-						<p>Automatically download frequently downloaded programs after startup.</p>
+						<p><a class="btn btn-secondary" role="button" onclick="redirect_pri_outboundporttester()">All Releases »</a></p>
+						<p>Test NAT allowed port by connecting outer all-port-opened server, on some restricted network. (Be aware of making a lot of traffic on usual public network)</p>
 					</div>
 					<div class="col-md-4">
 						<h2>SGB Initializer</h2>
 						<h5><span class="h6 text-secondary">by - </span><span class="text-success">mil-acc-github</span></h5>
-						<p><a class="btn btn-secondary" role="button" onclick="redirect_sub_ini()">All Releases »</a></p>
+						<p><a class="btn btn-secondary" role="button" onclick="redirect_sub_sgbinitializer()">All Releases »</a></p>
 						<p>Automatically download frequently downloaded programs after startup. Updated more frequently than ParkSnoopy's.</p>
 					</div>
 				</div>
